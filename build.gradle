@@ -11,6 +11,11 @@ sourceSets {
             srcDirs = ['src/main/resources']
         } */
     }
+     test {
+	      java {
+	        srcDirs = ['test']
+	      }
+	}
 }
 
 repositories {
@@ -25,10 +30,9 @@ dependencies {
 	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
 }
 
-/*
 task helloworld{
 	doLast{
 	  println 'helloworld';
 	}
 }
-*/
+
